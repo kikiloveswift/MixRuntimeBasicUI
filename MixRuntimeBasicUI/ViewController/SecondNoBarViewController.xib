@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondNoBarViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cl-nO-X01">
+                    <rect key="frame" x="113.5" y="300" width="148" height="67"/>
+                    <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="148" id="T7h-hu-6xX"/>
+                        <constraint firstAttribute="height" constant="67" id="WNk-0y-Nsg"/>
+                    </constraints>
+                    <state key="normal" title="POPBACK">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="popAction:" destination="-1" eventType="touchUpInside" id="knT-8t-omM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH3-kX-Q2Y">
+                    <rect key="frame" x="113" y="150" width="148" height="67"/>
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.63889474609999997" blue="0.66063623199999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="CR2-Ta-knU"/>
+                        <constraint firstAttribute="width" constant="148" id="UMg-hh-Wvk"/>
+                    </constraints>
+                    <state key="normal" title="PUSH">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="popAction:" destination="-1" eventType="touchUpInside" id="frM-ea-CIv"/>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="cXv-DZ-iug"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vH3-kX-Q2Y" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-150" id="9IR-Kd-PAi"/>
+                <constraint firstItem="2Cl-nO-X01" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="D35-wN-2oH"/>
+                <constraint firstItem="vH3-kX-Q2Y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cD2-dG-ZDz"/>
+                <constraint firstItem="2Cl-nO-X01" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vUF-Po-05g"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

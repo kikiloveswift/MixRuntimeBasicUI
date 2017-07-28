@@ -15,6 +15,12 @@
 		FC6C505C1F26F0DC00BDE568 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C505B1F26F0DC00BDE568 /* main.m */; };
 		FC6C50661F26F0DC00BDE568 /* MixRuntimeBasicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C50651F26F0DC00BDE568 /* MixRuntimeBasicUITests.m */; };
 		FC6C50711F26F0DC00BDE568 /* MixRuntimeBasicUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C50701F26F0DC00BDE568 /* MixRuntimeBasicUIUITests.m */; };
+		FC6C50871F270E7500BDE568 /* ThirdWithBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C50851F270E7500BDE568 /* ThirdWithBarViewController.m */; };
+		FC6C50881F270E7500BDE568 /* ThirdWithBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6C50861F270E7500BDE568 /* ThirdWithBarViewController.xib */; };
+		FC6C508C1F270EA200BDE568 /* SecondNoBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C508A1F270EA200BDE568 /* SecondNoBarViewController.m */; };
+		FC6C508D1F270EA200BDE568 /* SecondNoBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6C508B1F270EA200BDE568 /* SecondNoBarViewController.xib */; };
+		FC6C50901F27151500BDE568 /* UINavigationController+AnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C508F1F27151500BDE568 /* UINavigationController+AnimationTransition.m */; };
+		FCF3E64C1F28657700135BD4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF3E64B1F28657700135BD4 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		FC6C506C1F26F0DC00BDE568 /* MixRuntimeBasicUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixRuntimeBasicUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6C50701F26F0DC00BDE568 /* MixRuntimeBasicUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixRuntimeBasicUIUITests.m; sourceTree = "<group>"; };
 		FC6C50721F26F0DC00BDE568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC6C50841F270E7500BDE568 /* ThirdWithBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdWithBarViewController.h; sourceTree = "<group>"; };
+		FC6C50851F270E7500BDE568 /* ThirdWithBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdWithBarViewController.m; sourceTree = "<group>"; };
+		FC6C50861F270E7500BDE568 /* ThirdWithBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdWithBarViewController.xib; sourceTree = "<group>"; };
+		FC6C50891F270EA200BDE568 /* SecondNoBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondNoBarViewController.h; sourceTree = "<group>"; };
+		FC6C508A1F270EA200BDE568 /* SecondNoBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondNoBarViewController.m; sourceTree = "<group>"; };
+		FC6C508B1F270EA200BDE568 /* SecondNoBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondNoBarViewController.xib; sourceTree = "<group>"; };
+		FC6C508E1F27151500BDE568 /* UINavigationController+AnimationTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AnimationTransition.h"; sourceTree = "<group>"; };
+		FC6C508F1F27151500BDE568 /* UINavigationController+AnimationTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AnimationTransition.m"; sourceTree = "<group>"; };
+		FCF3E64A1F28657700135BD4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Catagory/Person.h; sourceTree = "<group>"; };
+		FCF3E64B1F28657700135BD4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Catagory/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +119,9 @@
 			children = (
 				FC6C504C1F26F0DC00BDE568 /* AppDelegate.h */,
 				FC6C504D1F26F0DC00BDE568 /* AppDelegate.m */,
-				FC6C504F1F26F0DC00BDE568 /* ViewController.h */,
-				FC6C50501F26F0DC00BDE568 /* ViewController.m */,
+				FC6C50911F27151A00BDE568 /* Catagory */,
+				FCF3E64D1F28658000135BD4 /* Model */,
+				FC6C507E1F270DB600BDE568 /* ViewController */,
 				FC6C50521F26F0DC00BDE568 /* Main.storyboard */,
 				FC6C50551F26F0DC00BDE568 /* Assets.xcassets */,
 				FC6C50571F26F0DC00BDE568 /* LaunchScreen.storyboard */,
@@ -130,6 +147,39 @@
 				FC6C50721F26F0DC00BDE568 /* Info.plist */,
 			);
 			path = MixRuntimeBasicUIUITests;
+			sourceTree = "<group>";
+		};
+		FC6C507E1F270DB600BDE568 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC6C504F1F26F0DC00BDE568 /* ViewController.h */,
+				FC6C50501F26F0DC00BDE568 /* ViewController.m */,
+				FC6C50891F270EA200BDE568 /* SecondNoBarViewController.h */,
+				FC6C508A1F270EA200BDE568 /* SecondNoBarViewController.m */,
+				FC6C508B1F270EA200BDE568 /* SecondNoBarViewController.xib */,
+				FC6C50841F270E7500BDE568 /* ThirdWithBarViewController.h */,
+				FC6C50851F270E7500BDE568 /* ThirdWithBarViewController.m */,
+				FC6C50861F270E7500BDE568 /* ThirdWithBarViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC6C50911F27151A00BDE568 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				FC6C508E1F27151500BDE568 /* UINavigationController+AnimationTransition.h */,
+				FC6C508F1F27151500BDE568 /* UINavigationController+AnimationTransition.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
+		FCF3E64D1F28658000135BD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCF3E64A1F28657700135BD4 /* Person.h */,
+				FCF3E64B1F28657700135BD4 /* Person.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6C50591F26F0DC00BDE568 /* LaunchScreen.storyboard in Resources */,
+				FC6C50881F270E7500BDE568 /* ThirdWithBarViewController.xib in Resources */,
+				FC6C508D1F270EA200BDE568 /* SecondNoBarViewController.xib in Resources */,
 				FC6C50561F26F0DC00BDE568 /* Assets.xcassets in Resources */,
 				FC6C50541F26F0DC00BDE568 /* Main.storyboard in Resources */,
 			);
@@ -264,7 +316,11 @@
 			files = (
 				FC6C50511F26F0DC00BDE568 /* ViewController.m in Sources */,
 				FC6C505C1F26F0DC00BDE568 /* main.m in Sources */,
+				FCF3E64C1F28657700135BD4 /* Person.m in Sources */,
+				FC6C508C1F270EA200BDE568 /* SecondNoBarViewController.m in Sources */,
 				FC6C504E1F26F0DC00BDE568 /* AppDelegate.m in Sources */,
+				FC6C50871F270E7500BDE568 /* ThirdWithBarViewController.m in Sources */,
+				FC6C50901F27151500BDE568 /* UINavigationController+AnimationTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -412,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -424,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MixRuntimeBasicUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.MixRuntimeBasicUI;
@@ -437,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MixRuntimeBasicUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.MixRuntimeBasicUI;
@@ -518,6 +576,7 @@
 				FC6C50771F26F0DC00BDE568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC6C50781F26F0DC00BDE568 /* Build configuration list for PBXNativeTarget "MixRuntimeBasicUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +585,7 @@
 				FC6C507A1F26F0DC00BDE568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC6C507B1F26F0DC00BDE568 /* Build configuration list for PBXNativeTarget "MixRuntimeBasicUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +594,7 @@
 				FC6C507D1F26F0DC00BDE568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
