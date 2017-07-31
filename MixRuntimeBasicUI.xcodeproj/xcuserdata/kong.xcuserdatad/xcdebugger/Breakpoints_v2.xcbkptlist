@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MixRuntimeBasicUI/ViewController/ViewController.m"
-            timestampString = "522924921.138266"
+            timestampString = "523179909.735343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "-testIvar"
             landmarkType = "7">
          </BreakpointContent>

@@ -15,13 +15,44 @@
 #import "Person.h"
 #import <objc/runtime.h>
 
+
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *stableView;
 
 @end
 
+
+
 @implementation ViewController
+
+void objc_setClassHandler(int (*userSuppliedHandler)(const char *))
+{
+    NSLog(@"coming");
+}
+
+//+ (void)load
+//{
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        Class cls = [self class];
+//        Method m_o = class_getInstanceMethod(cls, @selector(objc_setClassHandler:));
+//        Method m_r = class_getInstanceMethod(cls, @selector(u_objc_setClassHandler:));
+//        BOOL isSuccess = class_addMethod(cls, @selector(u_objc_setClassHandler:), method_getImplementation(m_o), method_getTypeEncoding(m_o));
+//        if (isSuccess)
+//        {
+//            class_replaceMethod(cls, @selector(objc_setClassHandler:), method_getImplementation(m_r), method_getTypeEncoding(m_r));
+//        }
+//        else
+//        {
+//            method_exchangeImplementations(m_o, m_r);
+//        }
+//        
+//    });
+//}
+
+
 
 - (void)viewDidLoad
 {
@@ -72,8 +103,12 @@
     Class B = objc_getMetaClass("Peson");
     
     NSLog(@"A is %@,B is %@",A,B);
+//    objc_setClassHandler(fun("name"));
     
 }
+
+
+
 
 + (BOOL)isWinterOrSummerTime
 {
