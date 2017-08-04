@@ -20,6 +20,8 @@
 		FC6C508C1F270EA200BDE568 /* SecondNoBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C508A1F270EA200BDE568 /* SecondNoBarViewController.m */; };
 		FC6C508D1F270EA200BDE568 /* SecondNoBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6C508B1F270EA200BDE568 /* SecondNoBarViewController.xib */; };
 		FC6C50901F27151500BDE568 /* UINavigationController+AnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C508F1F27151500BDE568 /* UINavigationController+AnimationTransition.m */; };
+		FC6EEF321F32C9B200789591 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6EEF311F32C9B200789591 /* Child.m */; };
+		FC6EEF361F32E7E500789591 /* Female.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6EEF351F32E7E500789591 /* Female.m */; };
 		FCF3E64C1F28657700135BD4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF3E64B1F28657700135BD4 /* Person.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,10 @@
 		FC6C508B1F270EA200BDE568 /* SecondNoBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondNoBarViewController.xib; sourceTree = "<group>"; };
 		FC6C508E1F27151500BDE568 /* UINavigationController+AnimationTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AnimationTransition.h"; sourceTree = "<group>"; };
 		FC6C508F1F27151500BDE568 /* UINavigationController+AnimationTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AnimationTransition.m"; sourceTree = "<group>"; };
+		FC6EEF301F32C9B200789591 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Child.h; path = Catagory/Child.h; sourceTree = "<group>"; };
+		FC6EEF311F32C9B200789591 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Child.m; path = Catagory/Child.m; sourceTree = "<group>"; };
+		FC6EEF341F32E7E500789591 /* Female.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Female.h; sourceTree = "<group>"; };
+		FC6EEF351F32E7E500789591 /* Female.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Female.m; sourceTree = "<group>"; };
 		FCF3E64A1F28657700135BD4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Catagory/Person.h; sourceTree = "<group>"; };
 		FCF3E64B1F28657700135BD4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Catagory/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +126,7 @@
 				FC6C504C1F26F0DC00BDE568 /* AppDelegate.h */,
 				FC6C504D1F26F0DC00BDE568 /* AppDelegate.m */,
 				FC6C50911F27151A00BDE568 /* Catagory */,
-				FCF3E64D1F28658000135BD4 /* Model */,
+				FC6EEF331F32C9C300789591 /* Model */,
 				FC6C507E1F270DB600BDE568 /* ViewController */,
 				FC6C50521F26F0DC00BDE568 /* Main.storyboard */,
 				FC6C50551F26F0DC00BDE568 /* Assets.xcassets */,
@@ -173,11 +179,15 @@
 			path = Catagory;
 			sourceTree = "<group>";
 		};
-		FCF3E64D1F28658000135BD4 /* Model */ = {
+		FC6EEF331F32C9C300789591 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FCF3E64A1F28657700135BD4 /* Person.h */,
 				FCF3E64B1F28657700135BD4 /* Person.m */,
+				FC6EEF341F32E7E500789591 /* Female.h */,
+				FC6EEF351F32E7E500789591 /* Female.m */,
+				FC6EEF301F32C9B200789591 /* Child.h */,
+				FC6EEF311F32C9B200789591 /* Child.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -317,9 +327,11 @@
 				FC6C50511F26F0DC00BDE568 /* ViewController.m in Sources */,
 				FC6C505C1F26F0DC00BDE568 /* main.m in Sources */,
 				FCF3E64C1F28657700135BD4 /* Person.m in Sources */,
+				FC6EEF361F32E7E500789591 /* Female.m in Sources */,
 				FC6C508C1F270EA200BDE568 /* SecondNoBarViewController.m in Sources */,
 				FC6C504E1F26F0DC00BDE568 /* AppDelegate.m in Sources */,
 				FC6C50871F270E7500BDE568 /* ThirdWithBarViewController.m in Sources */,
+				FC6EEF321F32C9B200789591 /* Child.m in Sources */,
 				FC6C50901F27151500BDE568 /* UINavigationController+AnimationTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

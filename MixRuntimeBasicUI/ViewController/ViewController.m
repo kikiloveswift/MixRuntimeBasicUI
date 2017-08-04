@@ -15,6 +15,7 @@
 #import "Person.h"
 #import <objc/runtime.h>
 
+#import "Female.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -104,6 +105,12 @@ void objc_setClassHandler(int (*userSuppliedHandler)(const char *))
     
     NSLog(@"A is %@,B is %@",A,B);
 //    objc_setClassHandler(fun("name"));
+    
+    NSArray *arr = ClassGetSubclasses([Person class]);
+    NSLog(@"arr is %@",arr);
+    
+    Female *fmale = [[Female alloc] init];
+    
     
 }
 
